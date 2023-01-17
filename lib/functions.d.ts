@@ -1,0 +1,1 @@
+export declare const isUrl: (url: string) => Promise<unknown>;
