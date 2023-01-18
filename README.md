@@ -19,9 +19,6 @@
   <a href="https://instagram.com/balaxdh" style="text-decoration: none;" target="_blank">
     <img src="https://img.shields.io/badge/instagram-%23E4405F?&style=for-the-badge&logo=instagram&logoColor=white"/>
   </a>
-  <a href="https://wa.me/+994407415260" style="text-decoration: none;" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-  </a>
   <br><br>
   Thx to ^_^
   <p>
@@ -5574,6 +5571,175 @@ random.waifu_sfw('waifu')
     "url": "https://i.waifu.pics/BA_QzLq.jpg"
   }
 }
+```
+</details>
+<br>
+</details>
+<details><summary><l>Image</l></summary><br>
+
+import image code using:
+```js
+const image = xr.image
+```
+<details><summary><b># Jadi Anime</b></summary><br>
+
+> #### Required parameters
+> - image is path | link | base64 | buffer
+```ts
+const jadi_anime: (img: string, nowm?: 'NOWM', opts?: opts | undefined)
+```
+
+This is path
+```js
+jadi_anime(__dirname + '/xorizn.jpg')
+```
+
+This is link
+```js
+//if NOWM
+// image.jadi_anime('link', 'NOWM')
+image.jadi_anime('https://www.bing.com/th?id=OIP.KpoA87feCn_Vqj2mFc0bewHaE8&w=240&h=160&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2')
+.then(res => {
+  if (res.mess) return console.log(res.mess)
+  console.log(res)
+})
+.catch(error => {
+  //error message
+})
+```
+
+#### output
+```js
+{
+  creator: '@Xorizn',
+  info: 'Use this code well, dont recode it!!!!!!!',
+  status: true,
+  result: {
+    code: 200,
+    img: 'https://shadow-cv-activity4tlimit-1251316161.cos.ap-shanghai.myqcloud.com/folder7/activity/me_in_comics/share/85d798819ae4de1be3fac8de2d1c9237_2xdjz.jpg?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDmKchHz54FBtKUKDSO6atwjIzLRH0hOcZ%26q-sign-time%3D1673830651%3B1674176251%26q-key-time%3D1673830651%3B1674176251%26q-header-list%3Dhost%26q-url-param-list%3D%26q-signature%3D7d984a4a8069733d82d3790c0268e51bcf34dbc6',
+    videoUrl: undefined,
+    singleImg: undefined
+  }
+}
+```
+</details>
+<details><summary><b># Pinterest</b></summary><br>
+
+> #### Required parameters
+> - (search) *type **String***
+
+```js
+image.pinterest('naruto')
+.then(res => {
+  if (res.mess) return console.log(res.mess)
+  console.log(res)
+})
+.catch(error => {
+  //error message
+})
+```
+
+#### output
+```js
+{
+  creator: '@Xorizn',
+  info: 'Use this code well, dont recode it!!!!!!!',
+  status: true,
+  result: [
+    'https://i.pinimg.com/736x/34/32/0a/34320a4ede536db1f42a80c323d05b23.jpg',
+    'https://i.pinimg.com/736x/ea/59/8a/ea598a8f6b6a74016a5a776202ced042.jpg',
+    'https://i.pinimg.com/736x/83/aa/85/83aa8535a3ea18b01d392fa73cbbd9c7.jpg',
+    'https://i.pinimg.com/736x/b9/b2/fe/b9b2fe6da082beab4e877f77fe679057.jpg',
+    'https://i.pinimg.com/736x/35/aa/8b/35aa8b1a331cf52af866dc0a06d68c6f.jpg',
+    'https://i.pinimg.com/736x/0a/66/6c/0a666cb60952d415c16e247c96291789.jpg',
+    'https://i.pinimg.com/736x/f3/aa/ba/f3aaba8b682ad2de4da8b04bbdf6df44.jpg',
+    'https://i.pinimg.com/736x/7c/2e/81/7c2e8136a12b3a33b585187606a705b9.jpg',
+    'https://i.pinimg.com/736x/c4/27/b9/c427b9a35897b4791c82e29dcc0b6484.jpg',
+    'https://i.pinimg.com/736x/9f/07/3b/9f073b55092fd2d3f53cbfdbe1df9ea6.jpg',
+    'https://i.pinimg.com/736x/ec/7b/bc/ec7bbc3ece268d3ea80d964484b5bdae.jpg',
+    'https://i.pinimg.com/736x/1c/2e/54/1c2e549a96ca738a396382b2c4a50215.jpg',
+    'https://i.pinimg.com/736x/1f/23/3c/1f233cab210553510a44d266b8a64daf.jpg',
+    'https://i.pinimg.com/736x/c6/ef/8b/c6ef8bd88a9efa91a06de32304e0fc87.jpg',
+    'https://i.pinimg.com/736x/50/a5/5c/50a55c0a1d1c10480aa70c133b0302bc.jpg',
+    'https://i.pinimg.com/736x/80/51/30/805130e01dff90ef8c87ef44010a8932.jpg',
+    'https://i.pinimg.com/736x/49/ca/18/49ca18cae8391087e48198cab95abb2c.jpg',
+    'https://i.pinimg.com/736x/4e/58/e1/4e58e1871fd2d436f6169be762b612ba.jpg',
+    'https://i.pinimg.com/736x/1c/c0/cd/1cc0cd4b852f8c8b60a8d8d49e48f7da.jpg',
+    'https://i.pinimg.com/736x/cf/f5/83/cff58358e312c05d801e4b91012f867a.jpg',
+    'https://i.pinimg.com/736x/eb/fc/69/ebfc69e4c8e1b418e063a52e3103f15b.jpg',
+    'https://i.pinimg.com/736x/bc/21/ab/bc21ab513f2b0d88503698095f1c9434.jpg',
+    'https://i.pinimg.com/736x/e6/22/28/e6222886fdc2dc2b847284232e03ba74.jpg',
+    'https://i.pinimg.com/736x/bc/7a/de/bc7adee823853259c5ddb61b755dbe9e.jpg'
+  ]
+}
+```
+</details>
+<details><summary><b># Pinterest Video Search</b></summary><br>
+
+> #### Required parameters
+> - (search) *type **String***
+
+```js
+image.pinterest_video_search('video')
+.then(res => {
+  if (res.mess) return console.log(res.mess)
+  console.log(res)
+})
+.catch(error => {
+  //error message
+})
+```
+
+#### output
+```js
+//This is error, and aill upgrade
+```
+</details>
+<details><summary><b># Pinterest Video Download</b></summary><br>
+
+> #### Required parameters
+> - (link) *type **String***
+
+```js
+image.pinterest_video('https://id.pinterest.com/pin/68961438044638254/')
+.then(res => {
+  if (res.mess) return console.log(res.mess)
+  console.log(res)
+})
+.catch(error => {
+  //error message
+})
+```
+
+#### output
+```js
+{
+  creator: '@Xorizn',
+  info: 'Use this code well, dont recode it!!!!!!!',
+  status: true,
+  result: 'https://v.pinimg.com/videos/mc/720p/42/f8/1b/42f81b4a248452ebc75f619b21514b45.mp4'
+}
+```
+</details>
+<details><summary><b># Wallpaper Anime Desktop</b></summary><br>
+
+> #### Required parameters
+> - (search) *type **String***
+
+```js
+image.wallpaper_anime_desktop('naruto')
+.then(res => {
+  if (res.mess) return console.log(res.mess)
+  console.log(res)
+})
+.catch(error => {
+  //error message
+})
+```
+
+#### output
+```js
+//This is error, and aill upgrade
 ```
 </details>
 
